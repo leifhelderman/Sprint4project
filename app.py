@@ -6,7 +6,7 @@ import scipy as sp
 
 
 
-df = pd.read_csv('C:\DataScience\Sprint4project/vehicles_us.csv')
+df = pd.read_csv('vehicles_us.csv')
 model_year_df = df.dropna(subset = ['model_year'])
 model_year_df['decade'] = ((model_year_df['model_year'] - 1) / 10).floordiv(1)
 model_year_by_decade = model_year_df.groupby('decade').size().reset_index()
