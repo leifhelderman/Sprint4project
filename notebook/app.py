@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly_express as pl
+import plotly.express as pl
 import scipy as sp
 import numpy as np
 
