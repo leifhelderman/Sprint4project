@@ -14,7 +14,7 @@ odometer_df_median = odometer_df['odometer'].median()
 model_year_df['model_year'] = df['model_year'].fillna(model_year_median)
 model_year_df['decade'] = ((model_year_df['model_year'] - 1) / 10).floordiv(1)
 model_year_by_decade = model_year_df.groupby('decade').size().reset_index()
-odometer_df['odometer'] = odometer_df['odomter'].fillna(odometer_df_median)
+odometer_df['odometer'] = odometer_df['odometer'].fillna(odometer_df_median)
 
 
 
